@@ -1,0 +1,92 @@
+[
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/Global_Liquidity_TLI_vBTC_chart.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/gl_pace_heatmap.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/US_Fed_YCC_v_TBills.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/usd_yen_carry_trade_USD_inflation_swap_zero_coupon_1y_v_GLSMB24mChg.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/convexityset_1_26_dynamic_mbs30_10yrt_with_export.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/advanced_eco_Gov_debt_v_Liquidity_ratio.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/advanced_eco_Liquidity_v_Gov_debt_ratio_w_BTC_Inverted.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/advanced_eco_Liquidity_v_Gov_debt_ratio_w_BTC.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/GL_Momentum_w_Deviations_index.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/gl_momentum_rolling3m.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/DollarIndexTrump16v24.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/key_indicators_risk_on_off.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/cb_gl_3m_12m_weekly_change.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/gl_pace_rises_falls_months_barchart.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/Synthetic10s_2s_v_Fed10s_2s_v_Bill_Issuance.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/timing_arrays.php?symbol=BTC-USD&iframe_id=timing_arrays_btc_usd"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/crypto_bottom_dashboard\/total_global_liquidity.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/liquidity_via_excessReserves_depositsliabilities.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/cyclical_secular_forecast_btc.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/quantum_trend_detector2.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/crypto_bottom_dashboard\/bottom_score_composite.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/crypto_bottom_dashboard\/sentiment_positioning.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/SP500Drawdowns_v_LiquiditySpread.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/CPI_v_CommoditiesYoY.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/CPI_v_DeliveryTimes.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/CPI_v_GSCPI.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/1966_82_yoy_cpi_over_current.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/Risk_On_Off_v_TrueflationUSIndex.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/jpn_v_usa_cpi_shifted.php"
+    },
+    {
+        "url": "https:\/\/ai.catenacap.xyz\/rss\/macro\/US_ISMvISMFwd1518m.php"
+    }
+]

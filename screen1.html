@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Terminal Screen 1 Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      font-family: sans-serif;
+      transform: scale(0.67);
+      transform-origin: top left;
+      width: 149.25%;
+      height: 149.25%;
+      overflow: hidden;
+      color: white;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+      height: 149.25vh;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .grid iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: #000;
+    }
+    .pane-indicator {
+      position: absolute;
+      top: 5px;
+      right: 20px;
+      font-size: 18px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="pane-indicator" id="paneIndicator">Pane 1</div>
+  <div class="grid" id="chartGrid"></div>
+
+  <script>
+    const screen = 1;
+    const grid = document.getElementById("chartGrid");
+    const paneIndicator = document.getElementById("paneIndicator");
+
+    let currentPane = 0;
+    let panes = [];
+
+    fetch("layout_screen" + screen + ".json")
+      .then(res => res.json())
+      .then(charts => {
+        for (let i = 0; i < charts.length; i += 15) {
+          panes.push(charts.slice(i, i + 15));
+        }
+
+        renderPane(currentPane);
+
+        if (panes.length > 1) {
+          setInterval(() => {
+            currentPane = (currentPane + 1) % panes.length;
+            renderPane(currentPane);
+          }, 60000);
+        }
+      });
+
+    function renderPane(index) {
+      grid.innerHTML = "";
+      paneIndicator.textContent = "Pane " + (index + 1) + " of " + panes.length;
+
+      panes[index].forEach(c => {
+        const iframe = document.createElement("iframe");
+        const baseUrl = c.url.split("?")[0];
+        iframe.src = baseUrl + "?t=" + new Date().getTime();  // bust browser cache
+        iframe.setAttribute("sandbox", "allow-scripts allow-same-origin");
+        grid.appendChild(iframe);
+
+        // Optional: Refresh each iframe every 60s (disable if unnecessary)
+        setInterval(() => {
+          iframe.src = baseUrl + "?t=" + new Date().getTime();
+        }, 60000);
+      });
+    }
+  </script>
+</body>
+</html>
